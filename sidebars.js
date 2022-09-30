@@ -3,7 +3,39 @@ module.exports = {
     {
       type: 'category',
       label: 'Architecture Pillars',
-      items: [],
+      items: [
+        {
+          'Reliabilty':[
+          ],
+        },
+        {
+          'Scalibility':[
+          ],
+        },
+        {
+          'Security':[
+          ],
+        },
+        {
+          'Cost Optimisation':[
+          ],
+        },
+        {
+          'High Availability and Performance':[
+          ],
+        },
+        {
+          'Monitoring and Alerting':[
+          ],
+        },
+        {
+          'Development Principles and Quality Assurance':[
+            'testing_standards',
+            'data_driven',
+            'api_compliance'
+          ],
+        },
+      ],
     },
     'contact_us',
   ]

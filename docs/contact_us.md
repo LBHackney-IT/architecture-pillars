@@ -1,6 +1,7 @@
 ---
 id: contact_us
 title: Contact Our Development Team
+slug: /
 ---
 
 ## For any enquiries please speak to:
