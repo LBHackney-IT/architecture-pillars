@@ -18,8 +18,6 @@ jobs:
         with:
           node-version: "12.x"
       - name: Release to GitHub Pages
-        env:
-          GIT_USER: git
         run: |
           git config --global user.email "ci@hackney.gov.uk"
           git config --global user.name "lbhackney-automation"
