@@ -20,7 +20,7 @@ jobs:
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
-          GIT_USER: git
+          GIT_USER: lbhackney-automation
         run: |
           git config --global user.email "ci@hackney.gov.uk"
           git config --global user.name "lbhackney-automation"
