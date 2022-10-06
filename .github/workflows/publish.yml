@@ -20,6 +20,8 @@ jobs:
           git-user: lbhackney-automation
           git-password: ${{secrets.GITHUB_TOKEN}}
       - name: Release to GitHub Pages
+        env:
+          GIT_USER: lbhackney-automation
         run: |
           git config --global user.email "ci@hackney.gov.uk"
           git config --global user.name "lbhackney-automation"
