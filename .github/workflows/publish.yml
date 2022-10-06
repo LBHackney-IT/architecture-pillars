@@ -17,9 +17,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+      - name: Release to GitHub Pages
+        with:
           git-user: lbhackney-automation
           git-password: ${{secrets.GITHUB_TOKEN}}
-      - name: Release to GitHub Pages
         env:
           GIT_USER: git
         run: |
