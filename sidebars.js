@@ -6,6 +6,7 @@ module.exports = {
       items: [
         {
           'Reliabilty':[
+            'production_deployment'
           ],
         },
         {
@@ -32,7 +33,9 @@ module.exports = {
           'Development Principles and Quality Assurance':[
             'testing_standards',
             'data_driven',
-            'api_compliance'
+            'api_compliance',
+            'qa_process',
+            'repository_standards'
           ],
         },
       ],
