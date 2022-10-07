@@ -17,14 +17,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-          git-user: lbhackney-automation
-          git-password: ${{secrets.GITHUB_TOKEN}}
       - name: Release to GitHub Pages
         env:
           GIT_USER: git
         run: |
-          git config --global user.email "ci@hackney.gov.uk"
-          git config --global user.name "lbhackney-automation"
+          git config --global user.email "selwyn.preston@hackney.gov.uk"
+          git config --global user.name "LBHSPreston"
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
