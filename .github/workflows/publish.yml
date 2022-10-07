@@ -12,24 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@master
+        uses: redkubes/docusaurus-deploy-action@v1
       - name: Install and Build
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
           git-user: lbhackney-automation
           git-password: ${{secrets.GITHUB_TOKEN}}
-      - name: Release to GitHub Pages
-        env:
-          GIT_USER: git
-        run: |
-          git config --global user.email "ci@hackney.gov.uk"
-          git config --global user.name "lbhackney-automation"
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
-          npx docusaurus deploy
+          deployment-branch: gh-pages
