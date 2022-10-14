@@ -20,7 +20,8 @@ module.exports = {
         },
         {
           'Security':[
-            'core_resource_compliance'
+            'core_resource_compliance',
+            'dev_least_principles'
           ],
         },
         {
