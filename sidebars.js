@@ -31,7 +31,8 @@ module.exports = {
         },
         {
           'High Availability and Performance':[
-            'preferred_data_source'
+            'preferred_data_source',
+            'production_deployment'
           ],
         },
         {
