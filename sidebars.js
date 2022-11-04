@@ -9,7 +9,8 @@ module.exports = {
           'Reliabilty':[
             'production_deployment',
             'preferred_data_source',
-            'core_resource_compliance'
+            'core_resource_compliance',
+            'automated_remediation'
           ],
         },
         {
@@ -26,7 +27,8 @@ module.exports = {
         },
         {
           'Cost Optimisation':[
-            'auto_scaling'
+            'auto_scaling',
+            'cloudwatch_log_retention'
           ],
         },
         {
@@ -51,7 +53,8 @@ module.exports = {
             'data_modelling',
             'adr',
             'api_spec_asessment_process',
-            'data_meetup_template'
+            'data_meetup_template', 
+            'release_process'
           ],
         },
       ],
